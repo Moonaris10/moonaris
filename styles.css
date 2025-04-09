@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #1b2838;
+    color: #e0e0e0;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Background image fix */
+body {
+    background-image: url(https://t3.ftcdn.net/jpg/05/09/23/26/360_F_509232606_NnepYxyqwD5uhie25owfpzi2l1nFlfVN.jpg);
+    background-size: 500px;
+    background-repeat: repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 90%;
+    max-width: 800px;
+    background: #171a21;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo */
+.logo-section {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    max-width: 125px;
+}
+
+/* Level */
+.level {
+    font-size: 18px;
+    color: #110b22;
+    font-weight: bold;
+    background: #222;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Avatar */
+.avatar {
+    width: 120px;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #110b22;
+    margin-top: 10px;
+}
+
+/* Status */
+.status {
+    font-size: 16px;
+    color: #4caf50;
+    margin-top: 5px;
+}
+
+/* Text */
+h1, h2, h3 {
+    color: #1d075a;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Social Media */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Contact */
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Blinkers */
+.blinkers-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blinker {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d075a;
+    text-shadow: 0 0 10px #110b22;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Play/Pause Button */
+#music-toggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e0e0e0;
+    background: #110b22;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#music-toggle:hover {
+    background: #1d075a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .avatar {
+        width: 100px;
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blinker {
+        font-size: 16px;
+    }
+}

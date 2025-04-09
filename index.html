@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOXARIX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <div class="logo-section">
+                <img src="icons/logo.gif" alt="Logo" class="logo">
+            </div>
+            <div class="level">.LVL ⛧</div>
+        </header>
+        
+        <!-- Blinkers Section -->
+        <div class="blinkers-container">
+            <p class="blinker">⛧ WELCOME TO MY PROFILE ⛧</p>
+        </div>
+
+        <section class="profile">
+            <img src="icons/avatar.jpg" alt="Avatar" class="avatar">
+            <h2>MOONARIS⛧</h2>
+            <p class="status">ONLIN⛧</p>
+        </section>
+
+        <section class="about">
+            <h3>ABOUT ME</h3>
+            <p>WEB DEVELOPER + GAME DEVELOPER + COMPUTER NERD :3 + SKINNY + EMO ROCKSTAR⛧ + GAMER + OCCULTIST⛧</p>
+        </section>
+
+        <section class="about">
+            <h3>MORE ABOUT ⛧MOONARIS</h3>
+            <p>⛧Moonaris is a unique presence in this world. He has a mystic energy. Most humans don’t understand Moonaris because they aren't at his level. He has unique skills: developing, occultism, detective abilities, and an elite taste in aesthetics,always a step a head.</p>
+        </section>
+        
+        <section class="contact">
+            <h3>⛧ CONTACT</h3>
+            <p><a href="mailto:MOONARIS10@GMAIL.COM">MOONARIS10@GMAIL.COM</a></p>
+        </section>
+
+        <section class="social-links">
+            <h3>FOLLOW ME :P</h3>
+            <a href="https://www.instagram.com/moonaris10/" target="_blank"><img src="icons/intsagram.png" alt="Instagram"></a>
+            <a href="https://github.com/Moonaris10" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+            <a href="https://steamcommunity.com/id/Moonaris10/" target="_blank"><img src="icons/steam.png" alt="Steam"></a>
+        </section>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <!-- Play/Pause Button -->
+    <button id="music-toggle">▶ Play Music</button>
+
+    <script>
+        const audio = document.getElementById("bg-music");
+        const button = document.getElementById("music-toggle");
+
+        button.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "⏸ Pause Music";
+            } else {
+                audio.pause();
+                button.textContent = "▶ Play Music";
+            }
+        });
+    </script>
+</body>
+</html>
